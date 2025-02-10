@@ -1,6 +1,9 @@
 export = Undertaker;
-declare class Undertaker extends EventEmitter<[never]> {
+declare function Undertaker(customRegistry: any): void;
+declare class Undertaker {
     constructor(customRegistry: any);
+    _registry: any;
+    _settle: boolean;
     tree: typeof tree;
     task: typeof task;
     series: typeof series;
@@ -9,13 +12,10 @@ declare class Undertaker extends EventEmitter<[never]> {
     registry: typeof registry;
     _getTask: typeof _getTask;
     _setTask: typeof _setTask;
-    _registry: any;
-    _settle: boolean;
 }
 declare namespace Undertaker {
     export { Undertaker };
 }
-import { EventEmitter } from "events";
 import tree = require("./tree");
 import task = require("./task");
 import series = require("./series");
