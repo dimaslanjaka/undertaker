@@ -13,6 +13,7 @@
     "node": ">=10.13.0"
   },
   "main": "lib/index.js",
+  "types": "lib/index.d.ts",
   "files": [
     "LICENSE",
     "lib"
@@ -39,6 +40,7 @@
     "nyc": "^15.1.0",
     "once": "^1.4.0",
     "through2": "^4.0.2",
+    "typescript": "^5.7.3",
     "undertaker-common-tasks": "^2.0.0",
     "undertaker-task-metadata": "^2.0.0",
     "vinyl-fs": "^4.0.0"
