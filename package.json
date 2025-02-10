@@ -12,10 +12,9 @@
   "engines": {
     "node": ">=10.13.0"
   },
-  "main": "index.js",
+  "main": "lib/index.js",
   "files": [
     "LICENSE",
-    "index.js",
     "lib"
   ],
   "scripts": {
