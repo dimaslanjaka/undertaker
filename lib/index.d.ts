@@ -12,6 +12,9 @@ declare class Undertaker extends EventEmitter<[never]> {
     _registry: any;
     _settle: boolean;
 }
+declare namespace Undertaker {
+    export { Undertaker };
+}
 import { EventEmitter } from "events";
 import tree = require("./tree");
 import task = require("./task");

@@ -21,7 +21,8 @@
   "scripts": {
     "lint": "eslint .",
     "pretest": "npm run lint",
-    "test": "nyc mocha --async-only"
+    "test": "nyc mocha --async-only",
+    "build": "rimraf lib && tsc -p tsconfig.json"
   },
   "dependencies": {
     "bach": "^2.0.1",
@@ -39,6 +40,7 @@
     "mocha": "^8.4.0",
     "nyc": "^15.1.0",
     "once": "^1.4.0",
+    "rimraf": "^6.0.1",
     "through2": "^4.0.2",
     "typescript": "^5.7.3",
     "undertaker-common-tasks": "^2.0.0",

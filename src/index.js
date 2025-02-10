@@ -33,3 +33,4 @@ class Undertaker extends EventEmitter {
 }
 
 module.exports = Undertaker;
+module.exports.Undertaker = Undertaker;
